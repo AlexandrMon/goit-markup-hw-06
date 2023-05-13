@@ -95,8 +95,7 @@ body{ font-family:'Roboto',sans-serif;
       letter-spacing: 0.03em;
       text-transform: uppercase;
       color: var(--color-too);
-      margin-right:76px;
-      
+      margin-right:76px; 
 }
 .logo-one{color: var(--color-one);}
 .logo-too{color: var(--color-five);}
@@ -104,9 +103,7 @@ body{ font-family:'Roboto',sans-serif;
 
 .menu{display: flex;
       align-items: center;
-      column-gap: 40px;
-}
-
+      column-gap: 40px;}
 
 
 .menu-link {font-weight:500 ;
@@ -125,7 +122,7 @@ body{ font-family:'Roboto',sans-serif;
               color: var(--color-six);
               transition: color var(--transition);}
 
- .current-link::after{content:'';
+.current-link::after{content:'';
                   position: absolute;
                   left:0;
                   display: block;
@@ -134,12 +131,9 @@ body{ font-family:'Roboto',sans-serif;
                   bottom: -1px;
                   background-color: var(--color-six);
                   border-radius: 2px;
-                  transition:transfotm color var(--color-six);                
-}
+                  transition:transfotm color var(--color-six);}                
 
 
-
- 
 .adress{font-style: normal;
         align-items: center;}  
 
@@ -364,7 +358,7 @@ body{ font-family:'Roboto',sans-serif;
 .customers-icon-size{width: calc((100% - 120px) / 6);
                      height: 88px;}
 
-.color-icons-customers{fill: currentColor;}                     
+.color-icons-customers{fill: var(--color-one);}                     
        
 
 .footer{background-color:var(--color-one);
@@ -382,7 +376,7 @@ body{ font-family:'Roboto',sans-serif;
               align-items: baseline;
               gap:120px;}
 
-.m-footer{gap:120px;}
+
 .m-footer-one{gap: 16px;}
          
 .p-footer-one{font-weight: 500;
@@ -529,7 +523,7 @@ body{ font-family:'Roboto',sans-serif;
 
 .modal-form-input{width:100%;
                   height: 40px;
-                  border: 1px solid var(--color-one);
+                  border: 1px solid rgba(46, 47, 66, 0.4);
                   border-radius: 4px;
                   padding-left: 42px;
                   transition: border-color var(--transition);}
@@ -543,7 +537,9 @@ body{ font-family:'Roboto',sans-serif;
        font-size: 14;
        line-height: 1.2;
        margin-bottom: 8px;
-       color: #303030;
+       color: rgba(46, 47, 66, 0.4);
+       
+       
  }
 
 .modal-form-field{margin-bottom: 12px;} 
@@ -555,24 +551,26 @@ body{ font-family:'Roboto',sans-serif;
        top: 50%; 
        transform: translate(0,-50%);
        left: 12px;
-       width: 18px;
-       height: 18px;
-       background-color:rgba(46, 47, 66, 0.4); 
-       transition:background-color var(--transition);}
+       width: 18px;  
+       height: 24px;  
+       fill: currentColor;
+       transition: fill var(--transition);
+}
  
-.modal-form-input:focus+.modal-form-input-icon{background-color:var(--color-too);
-                                               fill: var(--color-three);  }
+.modal-form-input:focus+.modal-form-input-icon{fill: var(--color-too);}
 
 .modal-form-message{width:100%;
                     height:120px;
                     padding: 10px 16px;
                     resize:none;
-                    border: 1px solid var(--color-one);
+                    border: 1px solid rgba(46, 47, 66, 0.4);
+                    color: rgba(46, 47, 66, 0.4);
                     border-radius: 4px;
-                    transition: border-color var(--transition);}
+                    transition: border-color var(--transition) color var(--transition);}
 
 .modal-form-message:focus{outline:none;
-                          border-color: var(--color-too);}
+                          border-color: var(--color-too);
+                          color: var(--color-one);}
 
 
 .modal-form-check-desc{display: flex;
@@ -586,7 +584,7 @@ body{ font-family:'Roboto',sans-serif;
                                 display: block; 
                                 width:16px; 
                                 height:16px; 
-                                border:1px solid var(--color-one); 
+                                border:1px solid rgba(46, 47, 66, 0.4); 
                                 border-radius:2px; 
                                 cursor: pointer; 
                                 margin-right:10px;} 
